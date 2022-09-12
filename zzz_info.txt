@@ -1,0 +1,14 @@
+install node.js
+
+1. Install the live server
+npm install -g live-server
+
+2. Clear port 8080 (if necessary, PID example provided)
+netstat -ano | findstr :8080
+taskkill /PID 4260 /F
+
+3. Start server
+live-server --no-css-inject
+
+4. Exit server
+Ctrl + c 

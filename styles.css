@@ -1,0 +1,252 @@
+.background-black {
+    background-color: black;
+    color: darkgrey;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.background-maroon {
+    background-color: maroon;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+}
+
+.flex-container-1 {
+    height: 250px;
+    display: flex;
+    background-color: lightgray;
+    justify-content: space-between;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: row;
+}
+
+.item-1 {
+    text-align: center;
+    width: 75px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+}
+
+.item-1:nth-of-type(1) {
+    align-self: start;
+}
+
+.item-1:nth-of-type(2) {
+    align-self: center;
+}
+
+.item-1:nth-of-type(3) {
+    align-self: end;
+}
+
+.flex-container-2 {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    background-color: lightblue;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: column;
+    /* row, row-reverse (reverses the elements), column */
+}
+
+.item-2 {
+    text-align: center;
+    width: 75px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+}
+
+.flex-container-3 {
+    height: 250px;
+    width: 125px;
+    display: flex;
+    background-color: lightgray;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: column;
+    /* row, row-reverse (reverses the elements), column */
+}
+
+.item-3 {
+    text-align: center;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+    /* How to center the content within item-3 (below) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-4 {
+    height: 250px;
+    width: 150px;
+    display: flex;
+    background-color: lightblue;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: column;
+    /* row, row-reverse (reverses the elements), column */
+
+    flex-wrap: wrap;
+}
+
+.item-4 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+    /* How to center the content within item-3 (below) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container-5 {
+    height: 250px;
+    width: 200px;
+    display: flex;
+    background-color: lightgrey;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: row;
+    /* row, row-reverse (reverses the elements), column */
+}
+
+.item-5 {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+}
+
+.item-5:nth-of-type(1) {
+    order: 2;
+}
+
+.item-5:nth-of-type(2) {
+    order: 3;
+}
+
+.item-5:nth-of-type(3) {
+    order: 1;
+}
+
+.flex-container-6 {
+    height: 150px;
+    width: 500px;
+    display: flex;
+    background-color: lightblue;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: row;
+    /* row, row-reverse (reverses the elements), column */
+}
+
+.item-6 {
+    text-align: center;
+    /* flex-basis sets the initial main size of a flex item. */
+    /* I can set the flex-grow here to make all the items grow the same */
+    flex-basis: 50px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+}
+
+/* flex-grow allows divs to expand at different rates when the window is expanding and contracting */
+.item-6:nth-of-type(1) {
+    flex-grow: 2;
+}
+
+.item-6:nth-of-type(2) {
+    flex-grow: 3;
+}
+
+.item-6:nth-of-type(3) {
+    flex-grow: 1;
+    /* I can set the flex-basis of an item to be different than the item-6, then an item will have a different minimum size. */
+    flex-basis: 10px;
+}
+
+.flex-container-7 {
+    height: 150px;
+    width: 300px;
+    display: flex;
+    background-color: lightgray;
+    justify-content: start;
+    /* ^ end, start, center, space-around, space-between */
+    align-items: start;
+    /* ^ end, start, center, */
+    flex-direction: row;
+    /* row, row-reverse (reverses the elements), column */
+}
+
+.item-7 {
+    text-align: center;
+    /* flex-basis sets the initial main size of a flex item. */
+    flex-basis: 75px;
+    height: 50px;
+    margin: 10px;
+    border: 3px solid #333;
+    background-color: cornsilk;
+}
+
+/* flex-grow allows divs to expand at different rates when the window is expanding and contracting */
+.item-7:nth-of-type(1) {
+    flex-shrink: 1;
+}
+
+.item-7:nth-of-type(2) {
+    flex-shrink: 3;
+}
+
+.item-7:nth-of-type(3) {
+    flex-shrink: 2;
+}
+
+.item-7:nth-of-type(4) {
+    flex-shrink: 5;
+}
+
+.item-7:nth-of-type(5) {
+    flex-shrink: 1;
+}
